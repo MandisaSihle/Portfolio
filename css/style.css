@@ -14,12 +14,7 @@ body {
 /* Navbar */
 .header {
   background: #222;
-  padding: 15px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  justify-content: space-between;
-  z-index: 1000;
+  color: white;
 }
 
 
@@ -27,33 +22,39 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 20px;
+  position: relative;
 }
 
 
 .logo {
-  color: #fff;
   font-weight: bold;
-  font-size: 20px;
-  justify-content: space-between;
+  font-size: 1.5rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
+  gap: 20px;
 }
 
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-links a {
+.nav-links li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  font-size: 14px;
+  font-weight: 500;
 }
 
-.nav-links a:hover {
-  color: rgb(193, 190, 190);
+
+/* My toggle */
+.mytoggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Checkbox */
+#menu-toggle {
+  display: none;
 }
 
 /* Hero Section */
@@ -61,7 +62,7 @@ body {
   background: url("../images/IMG_8793\ 2.jpg");
   height: 100vh;
      background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     color: white;
     display: flex;
@@ -544,6 +545,28 @@ body {
     text-align: center;
   }
 
+  .nav-links {
+    flex-direction: column;
+    margin-top: 60px;
+    width: 100%;
+    position: absolute;
+    right: 20px;
+    background-color: #333;
+    padding: 15px;
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+  }
+
+  .mytoggle {
+    display: block;
+  }
+
+  #menu-toggle:checked + .mytoggle + .nav-links {
+    display: flex;
+  }
+
+
   .skills-row, 
   #contact .contact-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -568,13 +591,27 @@ body {
 
   .nav-links {
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 60px;
     width: 100%;
+    position: absolute;
+    right: 20px;
+    background-color: #333;
+    padding: 15px;
+    display: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
   }
 
-  .nav-links li {
-    margin: 10px 0;
+
+
+  .mytoggle {
+    display: block;
   }
+
+  #menu-toggle:checked + .mytoggle + .nav-links {
+    display: flex;
+  }
+
 
   .hero h1 {
     font-size: 2rem;
