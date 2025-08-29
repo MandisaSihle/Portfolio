@@ -632,3 +632,14 @@ body {
     gap: 15px;
   }
 }
+
+  /* Style for mobile view of timeline to ensure lines are visible */
+    @media (max-width: 768px) {
+        .timeline-item {
+            border-left: 2px solid #ccc; /* Ensures the line is always visible */
+            padding-left: 20px;
+        }
+        .timeline-item::before {
+             left: -7px;
+        }
+    }
