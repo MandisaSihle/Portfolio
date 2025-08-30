@@ -257,7 +257,7 @@ body {
 
 .timeline-item.left .timeline-content {
   width: 45%;
-  text-align: right;
+  text-align: center;
   padding-right: 40px;
 }
 
@@ -268,7 +268,7 @@ body {
 
 .timeline-item.right .timeline-content {
   width: 45%;
-  text-align: left;
+  text-align: center;
   padding-left: 40px;
 }
 
