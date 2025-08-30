@@ -307,14 +307,16 @@ body {
   content: center;
 }
 
-.timeline-icon::after {
+.timeline-icon::before {
   content: "";
   position: absolute;
   top: 117px;
   left: 57px;
   width: 4px;
   height: 100%;
+  transform: translateX(-50%);
   background-color: lightgray;
+  z-index: 0;
 }
 
 /* Projects */
@@ -602,8 +604,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
   }
 
-
-
   .mytoggle {
     display: block;
   }
@@ -646,8 +646,8 @@ body {
 
   .timeline-item {
     flex-direction: column !important;
-    align-items: center;
     text-align: center;
+    margin: 60px;
   }
 
   .timeline-item .timeline-content {
@@ -659,9 +659,20 @@ body {
   .timeline-icon,
   .iconic-image {
     position: static;
-    margin: 20px 0;
-    transform: none;
+    margin: 20px auto;
   }
+
+  .timeline-content {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+.iconic-image {
+  position: absolute;
+  left: 41%;
+  transform: translateX(-50%);
+}
 
   .footer {
     flex-direction: column;
