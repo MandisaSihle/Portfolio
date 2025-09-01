@@ -14,3 +14,6 @@ Check out [LIVE DEMO](https://mandisasihle.github.io/Portfolio/) here!!
 
 
 ## Screenshot 
+<img src="https://github.com/MandisaSihle/Portfolio/blob/main/images/myportfolio.png" alt="Screenshot" width="500" />
+
+
