@@ -11,3 +11,6 @@ Check out [LIVE DEMO](https://mandisasihle.github.io/Portfolio/) here!!
   - **Project**
   - **Contact**
 - Easy to customize (edit text, add/remove sections)
+
+
+## Screenshot 
